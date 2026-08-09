@@ -14,7 +14,7 @@ class User{
             email=*eml;
         }
         void activate(){
-           std::string exec = "git config --global user.name "+this->user.get()+" && git config --global user.email "+this->email.get();
+           std::string exec = "git config --global --replace-all user.name "+this->user.get()+" && git config --global user.email "+this->email.get();
             system(exec.c_str());
         }
 

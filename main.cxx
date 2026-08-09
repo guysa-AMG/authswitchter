@@ -36,7 +36,7 @@ std::vector<User> parsefile(std::string path){
 
 int main (int argc,char ** argv){
     
-    std::vector<User> result = parsefile(".userlist/profiles.toml");
+    std::vector<User> result = parsefile("/usr/bin/.userlist/profiles.toml");
     int indx =0;
     if (argc==1){
         
